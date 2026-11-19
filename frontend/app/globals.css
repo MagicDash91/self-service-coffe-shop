@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* system fonts only: Google Fonts downloads are unreliable on this machine */
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-sans: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+html, body { background: #F3EADF; color: #2B1D16; }
+body {
+  font-family: var(--font-sans);
+  background-image: radial-gradient(1200px 600px at 0% 0%, #FBF4EA 0%, transparent 60%),
+    radial-gradient(900px 500px at 100% 100%, #EFE2D2 0%, transparent 60%);
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #E0D2C0; border-radius: 8px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

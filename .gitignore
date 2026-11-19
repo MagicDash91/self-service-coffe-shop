@@ -1,0 +1,32 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# python
+.venv/
+__pycache__/
+*.pyc
+.ruff_cache/
+
+# node / next.js
+node_modules/
+.next/
+*.tsbuildinfo
+next-env.d.ts
+
+# downloaded models (Whisper ~460 MB, Piper voices) - see README "Install"
+backend/models/
+
+# runtime data
+backend/data/
+backend/tools/reply_*.wav
+backend/tools/stt_eval_audio/
+
+# arduino build output
+esp32/**/build/
+
+# os / tool junk
+*.stackdump
+.DS_Store
+Thumbs.db
